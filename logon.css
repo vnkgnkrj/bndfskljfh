@@ -1,0 +1,352 @@
+﻿#BOM_dummy
+{
+}
+/* This is to workaround the UTF-8 BOM problem in some browsers */
+
+body
+{
+	font-family: Segoe UI, Verdana, Sans-Serif;
+	font-size: 0.85em;
+	background-color: #fff;
+	line-height: 1.31em;
+	margin: 0;
+	padding: 0;
+	color: #444;
+}
+
+a:link
+{
+	text-decoration: none;
+}
+a:visited
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+
+input
+{
+	font-family: Segoe UI, Verdana, sans-serif;
+}
+
+.non-display
+{
+	visibility: hidden;
+}
+
+.logon, .change-password, .links-panel
+{
+	display: none; /* make the panels hidden at first */
+}
+
+html, body, form, .main
+{
+	height: 100%;
+}
+
+.main
+{
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	min-height: 570px;
+	position: relative;
+}
+
+.language-container
+{
+	border-bottom: solid 1px #ccc;
+	padding: 5px 0px;
+	margin: 0px 20px;
+	text-align: right;
+}
+.language-selector
+{
+	display: inline-block;
+}
+.language-list li a.language-selected
+{
+	margin: 0px;
+}
+
+/* Must have to make the menu align to right */
+.ramjsfx-menu-root .ramjsfx-menu-shadow
+{
+	right: 0px;
+}
+
+.container_outter
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -286px;
+	width: 573px;
+}
+
+.container
+{
+	width: 573px; /*padding-top: 53px;*/
+	clear: both;
+	position: relative;
+	margin-top: -42%; /* -50% cannot make container in the vertical center, adjust manually */
+}
+
+.logos
+{
+	width: 240px;
+	text-align: center;
+	float: left;
+}
+
+.single
+{
+	padding-top: 163px;
+}
+
+.double
+{
+	padding-top: 134px;
+}
+
+.product-logo
+{
+	height: 48px;
+	width: 200px;
+}
+
+.oem-logo
+{
+	max-height: 53px;
+	max-width: 200px;
+	margin-top: 23px;
+}
+
+.right
+{
+	width: 333px;
+	margin-left: 240px;
+	min-height: 400px;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-image: url('../images/logon_splittor.png');
+	position: relative;
+	overflow: hidden;
+}
+
+.no-links
+{
+	padding-top: 109px;
+}
+
+.has-links
+{
+	padding-top: 83px;
+}
+
+.on-change-password
+{
+	padding-top: 72px;
+}
+
+.title-panel
+{
+	margin-left: 22px;
+	margin-bottom: 11px;
+}
+
+.site-image
+{
+	height: 32px;
+	width: 32px;
+	float: left;
+	padding-top : 2px
+}
+
+.title-text
+{
+	margin-left: 41px;
+}
+
+.server-name
+{
+	font-size: 1.25em;
+	word-wrap: break-word;
+	overflow: hidden;
+	color: #000;
+}
+
+.IE7 .server-name
+{
+	word-wrap: normal;
+}
+
+.site-name
+{
+	color: #555555;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
+.logon, .change-password
+{
+	margin-left: 63px;
+	margin-bottom: 16px;
+}
+
+.name-txt, .password-txt
+{
+	width: 200px;
+	font-size: 1em;
+}
+
+.watermark-txt, .normal-txt
+{
+	margin: 9px 0px;
+}
+
+.watermark-txt
+{
+	color: #555555;
+}
+
+.remember-me
+{
+	margin-top: 9px;
+}
+
+.remember-me label
+{
+	vertical-align: top;
+}
+
+.logon_button
+{
+	margin-left: 18px;
+	height: 36px;
+	width: 36px;
+	vertical-align: middle;
+}
+
+.logon_message
+{
+	font-size: 0.846em;
+	margin-top: 18px;
+	margin-bottom: 18px;
+	margin-left: 65px;
+	width: 196px;
+	padding-left: 5px;
+	padding-right: 7px;
+	padding-bottom: 5px;
+	padding-top: 2px;
+	border: solid 1px #ccc;
+}
+
+ul.password-policy
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul.password-policy li
+{
+	margin-left: 2em;
+}
+
+.error
+{
+	background-color: #ffaeb9;
+}
+.warning
+{
+	background-color: #ffffae;
+}
+
+#mobile_test
+{
+	width: 160px;
+	position: absolute;
+	overflow: hidden;
+}
+
+.links-panel
+{
+	border-top: solid 1px #ccc;
+	padding-left: 63px;
+	font-size: 0.846em;
+	word-wrap: break-word;
+	margin-left: 1px;
+}
+
+.links-panel
+{
+	color: #0066cc;
+}
+
+
+.links-panel .hide-link
+{
+	display: none;
+}
+
+.more-links-label
+{
+	margin-top: 4px;
+	cursor: pointer;
+	cursor: hand;
+	display: inline-block;
+}
+
+#cover
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #fff;
+	height: 100%;
+	width: 100%;
+	z-index: 1000;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	display: none;
+}
+
+
+/************ timeout panel ********************/
+.timeout-panel
+{
+	margin: 20px auto auto auto;
+	width: 807px;
+	clear: both;
+	display: none;
+}
+
+.timeout-title
+{
+	margin-top: 40px;
+	font-size: 1.7em;
+	font-weight: normal;
+	color: #F4793A;
+}
+.timeout-ico
+{
+	float: left;
+	margin-top: 30px;
+	margin-left: 45px;
+}
+.timeout-message
+{
+	margin-top: 30px;
+}
+.timeout-buttons
+{
+	text-align:center;
+	margin-top:5px;
+}
+.timeout-button
+{
+	margin: auto 5px;
+}

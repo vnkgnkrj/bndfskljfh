@@ -1,0 +1,155 @@
+.ramjsfx-menu-root
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 150%;
+	min-height: 13px;
+}
+
+.ramjsfx-menu-root > li
+{
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: relative;
+	white-space: nowrap;
+}
+
+.ramjsfx-menu-root.ramjsfx-menu-contextmenu li
+{
+	float: none;
+	position: static;
+}
+
+.ramjsfx-menu-root li a
+{
+	display: block;
+	text-decoration: none;
+	color: #000;
+	padding: 0 6px;
+}
+
+.ramjsfx-menu-root > li > a
+{
+	margin: 0 18px 0 0;
+	padding: 0;
+}
+
+.ramjsfx-menu-root .ramjsfx-menu-vsep
+{
+	vertical-align: middle;
+	height: 1.5em;
+	border-left: 1px solid silver;
+	margin: 0 12px 0 -6px;
+}
+
+.ramjsfx-menu-root > li.ramjsfx-menu-enabled > a:hover > .ramjsfx-menu-rootlink
+{
+	text-decoration: underline;
+}
+
+.ramjsfx-menu-root a span.ramjsfx-menu-chev
+{
+	font-size: 0.5em;
+	font-family: Arial;
+	vertical-align: 2px;
+	margin-left: 2px;
+}
+.ramjsfx-menu-root > li.ramjsfx-menu-enabled > a:hover
+{
+	text-decoration: none;
+}
+
+.ramjsfx-menu-root .ramjsfx-menu-shadow,
+.ramjsfx-menu-context-box .ramjsfx-menu-context-shadow-box .ramjsfx-menu-shadow
+{
+	position: absolute;
+	z-index: 1000;
+	background: url('../images/shadow.png') repeat;
+	margin-top: 7px;
+	margin-left: 2px;
+}
+
+.ramjsfx-menu-context-box .ramjsfx-menu-context-shadow-box
+{
+    position: relative;
+    display:block;
+}
+
+.ramjsfx-menu-context-box
+{
+    position: absolute;
+    display:block;
+}
+
+.ramjsfx-menu-root li ul,
+.ramjsfx-menu-root.ramjsfx-menu-contextmenu
+{
+	border: 1px solid #ccc;
+	padding: 2px;
+	list-style: none;
+	position: relative;
+	display: none;
+	background: #fff;
+	min-width: 90pt;
+	margin: -3px 3px 3px -3px;
+}
+
+.ramjsfx-menu-root.ramjsfx-menu-contextmenu
+{
+    display: block;
+}
+
+.ramjsfx-menu-root li ul li,
+.ramjsfx-menu-root.ramjsfx-menu-contextmenu li
+{
+	clear: left;
+	background: #fff;
+}
+
+.ramjsfx-menu-root.ramjsfx-menu-contextmenu li a
+{
+	padding: 0 6px;
+	margin: 0;
+}
+
+.ramjsfx-menu-root li
+{
+	border: transparent 1px solid;
+}
+
+.ramjsfx-menu-root ul a,
+.ramjsfx-menu-contextmenu a
+{
+	outline: none;
+}
+
+.ramjsfx-menu-root ul li.ramjsfx-menu-focused,
+.ramjsfx-menu-contextmenu li.ramjsfx-menu-focused
+{
+	background: #f3f7fd;
+	border: 1px solid #bbd8f8;
+}
+
+.ramjsfx-menu-root li.ramjsfx-menu-disabled
+{
+	border: transparent 1px solid;
+}
+
+.ramjsfx-menu-contextmenu li.ramjsfx-menu-disabled.ramjsfx-menu-focused
+{
+	border: 1px solid #bbd8f8;
+}
+
+.ramjsfx-menu-root li.ramjsfx-menu-disabled a
+{
+	color: silver;
+	cursor: default;
+	text-decoration: none;
+}
+
+.ramjsfx-menu-contextmenu
+{
+    font-size: 1.25em;
+}
